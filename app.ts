@@ -1,7 +1,12 @@
-// Define an array of names
-let names: string[] = ["John", "Sarah", "Michael", "Emily"];
+// Define an array of friends' names
+let names: string[] = ["Ambitab", "Amir", "Sharukh", "Salman"];
 
-// Loop through each name in the array and print it
-for (let i = 0; i < names.length; i++) {
-    console.log(names[i]);
+// Function to print personalized messages to each friend
+function printPersonalizedMessages(names: string[]): void {
+    names.forEach(name => {
+        console.log(`Hello ${name}, I hope you're having a great day!`);
+    });
 }
+
+// Call the function to print personalized messages
+printPersonalizedMessages(names);

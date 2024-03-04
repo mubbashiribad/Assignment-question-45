@@ -1,6 +1,10 @@
-// Define an array of names
-var names = ["John", "Sarah", "Michael", "Emily"];
-// Loop through each name in the array and print it
-for (var i = 0; i < names.length; i++) {
-    console.log(names[i]);
+// Define an array of friends' names
+var names = ["Ambitab", "Amir", "Sharukh", "Salman"];
+// Function to print personalized messages to each friend
+function printPersonalizedMessages(names) {
+    names.forEach(function (name) {
+        console.log("Hello ".concat(name, ", I hope you're having a great day!"));
+    });
 }
+// Call the function to print personalized messages
+printPersonalizedMessages(names);
