@@ -1,12 +1,12 @@
-// Define an array of friends' names
-let names: string[] = ["Ambitab", "Amir", "Sharukh", "Salman"];
+// Define an array of favorite modes of transportation
+let transportation: string[] = ["car", "motorcycle", "bicycle", "train"];
 
-// Function to print personalized messages to each friend
-function printPersonalizedMessages(names: string[]): void {
-    names.forEach(name => {
-        console.log(`Hello ${name}, I hope you're having a great day!`);
+// Function to print statements about the items in the list
+function printTransportationStatements(transportation: string[]): void {
+    transportation.forEach(item => {
+        console.log(`I would like to own a ${item}.`);
     });
 }
 
-// Call the function to print personalized messages
-printPersonalizedMessages(names);
+// Call the function to print statements
+printTransportationStatements(transportation);
